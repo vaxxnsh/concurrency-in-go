@@ -1,16 +1,18 @@
 package main
 
 import (
-	"fmt"
+	"sync"
 
-	"github.com/vaxxnsh/concurrency-in-go/synchronization"
+	concurrencybuildingblocks "github.com/vaxxnsh/concurrency-in-go/concurrency-building-blocks"
 )
 
 func main() {
 
-	fmt.Println("showing example for uncertain concurrent code -")
+	var wg sync.WaitGroup
 
 	for range 5 {
-		synchronization.StarvationExample()
+		concurrencybuildingblocks.RunConcurrently(&wg)
 	}
+
+	wg.Wait()
 }
