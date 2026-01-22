@@ -11,7 +11,7 @@ func main() {
 	var wg sync.WaitGroup
 
 	for range 5 {
-		concurrencybuildingblocks.RunConcurrently(&wg)
+		concurrencybuildingblocks.MemConsumedInGoroutines()
 	}
 
 	wg.Wait()
