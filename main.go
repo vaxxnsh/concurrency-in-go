@@ -3,7 +3,7 @@ package main
 import (
 	"sync"
 
-	concurrencybuildingblocks "github.com/vaxxnsh/concurrency-in-go/concurrency-building-blocks"
+	syncpackage "github.com/vaxxnsh/concurrency-in-go/sync-package"
 )
 
 func main() {
@@ -11,7 +11,7 @@ func main() {
 	var wg sync.WaitGroup
 
 	for range 5 {
-		concurrencybuildingblocks.MemConsumedInGoroutines()
+		syncpackage.WaitGroupExample()
 	}
 
 	wg.Wait()
