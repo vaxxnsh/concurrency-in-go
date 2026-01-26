@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	syncpackage.MutexExample()
+	syncpackage.RWMutexExample()
 }
