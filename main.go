@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	syncpackage.CondButtonExample()
+	syncpackage.OnceExample()
 }
