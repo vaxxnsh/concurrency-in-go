@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	syncpackage.OnceExample()
+	syncpackage.PoolExample()
 }
