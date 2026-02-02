@@ -1,9 +1,9 @@
 package main
 
 import (
-	syncpackage "github.com/vaxxnsh/concurrency-in-go/sync-package"
+	concurrencypatterns "github.com/vaxxnsh/concurrency-in-go/concurrency-patterns"
 )
 
 func main() {
-	syncpackage.PoolExample()
+	concurrencypatterns.ForSelectExample()
 }
